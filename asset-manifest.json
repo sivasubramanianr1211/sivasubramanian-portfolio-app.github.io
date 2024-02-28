@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sivasubramanian-portfolio-app.github.io/static/css/main.79df99dc.css",
+    "main.js": "/sivasubramanian-portfolio-app.github.io/static/js/main.99ef76f0.js",
+    "static/js/592.9525cf69.chunk.js": "/sivasubramanian-portfolio-app.github.io/static/js/592.9525cf69.chunk.js",
+    "static/media/profile-img.jpg": "/sivasubramanian-portfolio-app.github.io/static/media/profile-img.a8b4b5a10cab6e69533a.jpg",
+    "static/media/menu-icon.svg": "/sivasubramanian-portfolio-app.github.io/static/media/menu-icon.ed134105d5f8f5b7420bbaf3d3da0b72.svg",
+    "index.html": "/sivasubramanian-portfolio-app.github.io/index.html",
+    "main.79df99dc.css.map": "/sivasubramanian-portfolio-app.github.io/static/css/main.79df99dc.css.map",
+    "main.99ef76f0.js.map": "/sivasubramanian-portfolio-app.github.io/static/js/main.99ef76f0.js.map",
+    "592.9525cf69.chunk.js.map": "/sivasubramanian-portfolio-app.github.io/static/js/592.9525cf69.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79df99dc.css",
+    "static/js/main.99ef76f0.js"
+  ]
+}
