@@ -1,6 +1,6 @@
 // Header.tsx
 
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-scroll";
 import clsx from "clsx";
 import useWindowSize from "../utils/useWindowSize";
@@ -11,14 +11,44 @@ const Header: React.FC = () => {
   console.log(windowWidth);
   const isMobile: boolean = windowWidth !== undefined && windowWidth < 768;
 
+  const [isMenuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header>
       <nav>
         <div className="flex justify-end">
           {isMobile && (
-            <div className="ml-auto cursor-pointer">
-              <MenuIcon />
-            </div>
+            <>
+              <div className="ml-auto cursor-pointer" onClick={toggleMenu}>
+                <MenuIcon />
+              </div>
+              {console.log('ismenu',isMenuOpen )}
+              {isMenuOpen && (
+                <div className="fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
+                  <div className="flex items-center justify-end p-4">
+                    <div className="cursor-pointer" onClick={toggleMenu}>
+                      {/* Close icon or any other close mechanism */}
+                      <span className="text-white">Close</span>
+                    </div>
+                  </div>
+                  <div className="flex flex-col items-center text-white">
+                    <a href="#description" className="py-2">
+                      Description
+                    </a>
+                    <a href="#skillset" className="py-2">
+                      Skillset
+                    </a>
+                    <a href="#contact" className="py-2">
+                      Contact
+                    </a>
+                  </div>
+                </div>
+              )}
+            </>
           )}
         </div>
         <div className="flex justify-center items-center">
