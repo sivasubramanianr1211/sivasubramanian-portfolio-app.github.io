@@ -2,12 +2,8 @@
 
 import React from "react";
 import ProfileImg from "../assets/profile-img.jpg";
-import useWindowSize from "../utils/useWindowSize";
 
 const Profile: React.FC = () => {
-  const { width: windowWidth } = useWindowSize();
-  console.log(windowWidth);
-  const isMobile: boolean = windowWidth !== undefined && windowWidth < 768;
   return (
     <div className="items-center m-0 p-[20px]">
       <div className="flex justify-center">
@@ -17,6 +13,7 @@ const Profile: React.FC = () => {
             height={"200px"}
             width={"200px"}
             src={ProfileImg}
+            alt=""
           />
         </div>
       </div>
